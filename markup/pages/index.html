@@ -1,0 +1,220 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    {{> head/head head.defaults owlCarousel=true}}
+</head>
+
+<body>
+    {{> header/header page='feautures'}}
+    <section class="page-features">
+        <div class="container">
+            {{> carousel/carousel doubleChevron = true class = "big" carouselID = "carousel-features-big" }}
+            <div class="row">
+                <div class="col-lg-9">
+                    {{> carousel/carousel doubleChevron = true class = "middle" carouselID = "carousel-feature-middle" }}
+                </div>
+                <div class="col-lg-3">
+                    {{> carousel/carousel class = "little" carouselID = "carousel-feature-little" }}
+                    <span class="gallery_title">SIDEBAR GALLERY</span>
+                    <ul class="gallery">
+                        <li><img src="static/img/content/small-img-galery.png" alt=""></li>
+                        <li><img src="static/img/content/small-img-galery.png" alt=""></li>
+                        <li><img src="static/img/content/small-img-galery.png" alt=""></li>
+                        <li><img src="static/img/content/small-img-galery.png" alt=""></li>
+                        <li><img src="static/img/content/small-img-galery.png" alt=""></li>
+                        <li><img src="static/img/content/small-img-galery.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOME CARS START -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="some-item">
+                        <div class="item-view suspendisse" data-type='suspendisse'></div>
+                        <h2>SUSPENDISSE</h2>
+                        <p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. </p>
+                        <a href="#!">read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="some-item">
+                        <div class="item-view maecenas" data-type='maecenas'></div>
+                        <h2>MAECENAS</h2>
+                        <p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+                        <a href="#!">read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="some-item">
+                        <div class="item-view aliquam" data-type="aliquam"></div>
+                        <h2>ALIQUAM</h2>
+                        <p>Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </p>
+                        <a href="#!">read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="some-item">
+                        <div class="item-view habitasse" data-type="habitasse"></div>
+                        <h2>HABITASSE</h2>
+                        <p>Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </p>
+                        <a href="#!">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SOME CARDS END -->
+
+        <!-- ACCORDION START -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="accordion">
+                        <a class="collapse_tab" role="tab" data-toggle="collapse" href="#collapseOne">
+                            <h3 class="tab-title">ACCORDION TITLE</h3>
+                            <span class="colapse-indicator"></span>
+                        </a>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <a class="collapse_tab" role="tab" data-toggle="collapse" href="#collapseTwo">
+                            <h3 class="tab-title">ACCORDION TITLE</h3>
+                            <span class="colapse-indicator"></span>
+                        </a>
+                        <div id="collapseTwo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <a class="collapse_tab" role="tab" data-toggle="collapse" href="#collapseThree">
+                            <h3 class="tab-title">ACCORDION TITLE</h3>
+                            <span class="colapse-indicator"></span>
+                        </a>
+                        <div id="collapseThree" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="accordion">
+                        <a class="collapse_tab" role="tab" data-toggle="collapse" href="#collapseOneMin">
+                            <h3 class="tab-title">ACCORDION TITLE</h3>
+                            <span class="colapse-indicator"></span>
+                        </a>
+                        <div id="collapseOneMin" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <a class="collapse_tab" role="tab" data-toggle="collapse" href="#collapseTwoMin">
+                            <h3 class="tab-title">ACCORDION TITLE</h3>
+                            <span class="colapse-indicator"></span>
+                        </a>
+                        <div id="collapseTwoMin" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <a class="collapse_tab" role="tab" data-toggle="collapse" href="#collapseThreeMin">
+                            <h3 class="tab-title">ACCORDION TITLE</h3>
+                            <span class="colapse-indicator"></span>
+                        </a>
+                        <div id="collapseThreeMin" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ACORDION END -->
+        <!-- TABS START -->
+        <div class="container">
+            <div class="row">
+                <div class="tab-group">
+                    <div class="col-lg-9">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#tab1" data-toggle="tab">TAB TIITLE</a></li>
+                            <li><a href="#tab2" data-toggle="tab">TAB TIITLE</a></li>
+                            <li><a href="#tab3" data-toggle="tab">TAB TIITLE</a></li>
+                            <li><a href="#tab4" data-toggle="tab">TAB TIITLE</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <p>
+                                    1 Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus
+                                    eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+                                </p>
+                                <img src="/static/img/content/tab-img.png" alt="">
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <p>
+                                    2 Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus
+                                    eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+                                </p>
+                                <img src="/static/img/content/tab-img.png" alt="">
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <p>
+                                    3 Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus
+                                    eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+                                </p>
+                                <img src="/static/img/content/tab-img.png" alt="">
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                <p>
+                                    4 Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. Vivamus
+                                    eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncus consequat.
+                                </p>
+                                <img src="/static/img/content/tab-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#tab5" data-toggle="tab">TAB TIITLE</a></li>
+                            <li><a href="#tab6" data-toggle="tab">TAB TIITLE</a></li>
+                        </ul>
+                        <div class="tab-content tab-content_min">
+                            <div class="tab-pane active" id="tab5">
+                                <p>
+                                    5 Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncu
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="tab6">
+                                <p>
+                                    6 Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor.Ut eleifend libero sed neque rhoncu
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TABS END -->
+        
+    </section>
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>

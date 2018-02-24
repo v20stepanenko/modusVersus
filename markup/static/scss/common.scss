@@ -1,0 +1,442 @@
+// Common styles of the project
+@import 'vars';
+body {
+    background: #f3f3f3;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: sans-serif, "OpenSans-Extrabold"; //  font-weight: 400; 
+    color: $paleteColor2;
+    span {
+        font-size: 25px;
+        font-family: sans-serif, "Open Sans";
+        font-weight: 400;
+    }
+}
+
+header {
+    padding: 20px 0;
+    background: url("../img/general/linear.png");
+    background-repeat: repeat-x;
+    background-position-y: 100%;
+    background-color: $paleteColor1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 9px 0 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        a {
+            color: $paleteColor2;
+            font-family: sans-serif, "Open Sans - Semibold";
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            background: transparent;
+            border-bottom: transparent;
+            border-radius: 5px;
+            transition: 1s;
+            &:hover,
+            &:active,
+            &:focus,
+            &:visited {
+                background: $paleteColor3;
+                border-bottom: 3px solid $paleteColor4;
+                text-decoration: none;
+                color: $paleteColor2;
+            }
+            &:focus {
+                background: $paleteColor5;
+                border-bottom: 3px solid $paleteColor6;
+            }
+        }
+    }
+    li:last-of-type {
+        position: relative;
+        img {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    ul li .search_active {
+        background: $paleteColor5;
+        border-bottom: 3px solid $paleteColor6;
+    }
+    .search-form {
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        input {
+            border-radius: 5px;
+            border: 5px solid $paleteColor6;
+            outline: none;
+            z-index: 5;
+        }
+        &:after {
+            content: " ";
+            display: block;
+            z-index: 5;
+            position: absolute;
+            top: -12px;
+            right: 11px;
+            border: 7px solid transparent;
+            border-bottom: 7px solid $paleteColor6;
+        }
+    }
+}
+
+.header_footer {
+    background: $paleteColor7;
+    margin-bottom: 50px;
+}
+
+.header_footer-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    color: $paleteColor8;
+    span {
+        align-self: center;
+        text-transform: uppercase;
+        font-family: sans-serif, 'Open Sans - Semibold';
+        font-weight: 400;
+        font-size: 24px;
+    }
+    ul{
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        text-transform: capitalize;
+        display: inline-block;
+        a {
+            color: $paleteColor8;
+            text-decoration: none;
+        }
+        &:after {
+            margin-left: 5px;
+            content: '/';
+        }
+        &:last-of-type:after {
+            content: '';
+        }
+    }
+    &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        bottom: -24px;
+        border: 12px solid transparent;
+        border-top: 12px solid $paleteColor7;
+    }
+}
+
+// Carousel
+.carousel {
+    position: relative;
+    z-index: 10;
+    @include border-bottom_gray();
+    .carousel-indicators {
+        bottom: 0;
+        padding: 0;
+        margin-bottom: 0;
+        li {
+            background: $paleteColor8;
+            margin: 0;
+            padding: 0;
+            border-radius: none;
+            margin-right: 10px;
+        }
+        .active {
+            background: $paleteColor5;
+        }
+    }
+    .left-control {
+        left: 0;
+        border-radius: 0 6px 6px 0;
+    }
+    .right-control {
+        right: 0;
+        border-radius: 6px 0 0 6px;
+    }
+    .carousel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 15;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $paleteColor5;
+        border-bottom: 3px solid $paleteColor6;
+        span {
+            color: $paleteColor2;
+            padding: 0;
+            margin: -5px;
+        }
+    }
+}
+
+.carousel_big,
+.carousel_middle {
+    margin-bottom: 100px;
+    .carousel-btn {
+        width: 50px;
+        height: 57px;
+    }
+    .carousel-indicators {
+        bottom: -34px;
+        li {
+            width: 60px;
+            height: 5px;
+        }
+    }
+}
+
+.carousel_little {
+    margin-bottom: 79px;
+    .carousel-btn {
+        width: 40px;
+        height: 37px;
+    }
+    .carousel-indicators {
+        bottom: -27px;
+        li {
+            width: 30px;
+            height: 5px;
+            margin-right: 10px;
+        }
+    }
+}
+
+//<< Carousel END
+// Gallery
+.gallery_title {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-family: sans-serif, "Open Sans - Extrabold";
+    font-size: 16px;
+    font-weight: 600;
+    color: $paleteColor8;
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    li {
+        margin-bottom: 44px;
+        border-radius: 5px;
+        display: inline-block;
+        @include border-bottom_gray();
+    }
+}
+
+//<<<GALERY END
+//Some card item
+.suspendisse {
+    @include bg($awesome);
+}
+
+.suspendisse-active {
+    @include bg($awesome-active);
+}
+
+.maecenas {
+    @include bg($key);
+}
+
+.maecenas-active {
+    @include bg($key-active);
+}
+
+.aliquam {
+    @include bg($flag);
+}
+
+.aliquam-active {
+    @include bg($flag-active);
+}
+
+.habitasse {
+    @include bg($bulb);
+}
+
+.habitasse-active {
+    @include bg($bulb-active);
+}
+
+.some-item {
+    background: $paleteColor11;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0 25px;
+    height: 310px;
+    h2,
+    p {
+        margin: 9px 0 15px;
+    }
+    h2 {
+        font-size: 16px;
+        color: $paleteColor8;
+        font-weight: 600;
+    }
+    a {
+        align-self: center;
+        position: absolute;
+        bottom: 0px;
+        border: none;
+        outline: none;
+        color: $paleteColor2;
+        background: $paleteColor3;
+        border-bottom: 3px solid $paleteColor4;
+        width: 200px;
+        height: 50px;
+        padding-top: 19px;
+        border-radius: 5px;
+        text-decoration: none;
+        transform: translateY(50%);
+        &:active,
+        &:focus {
+            text-decoration: none;
+            color: $paleteColor2;
+        }
+        &:active {
+            background: $paleteColor5;
+            border-bottom: 3px solid $paleteColor6;
+        }
+    }
+}
+
+.page-features {
+    .some-item {
+        margin-bottom: 110px;
+    }
+}
+
+.item-view {
+    margin: 0 auto;
+}
+
+// SOME CARD ITEM END
+// accordion start
+.accordion{
+    @include border-bottom_gray();
+    border-radius: 10px;
+}
+.collapse_tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $paddingAccordionRL;
+    background: $paleteColor11;
+    text-decoration: none;
+    margin-top: 7px;
+    border-radius: 10px;
+    &:hover,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+    .tab-title {
+        margin: 18px 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: $paleteColor8;
+    }
+    .colapse-indicator {
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+        background: $paleteColor8;
+        color: $paleteColor2;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        font-weight: 600;
+        &:before {
+            content: '-';
+        }
+    }
+}
+
+.panel-collapse {
+    background: $paleteColor11;
+}
+
+.collapsed {
+    .colapse-indicator {
+        &:before {
+            content: '+';
+        }
+    }
+}
+
+// ACCORDION END
+
+// TABS GROUP
+
+.page-features {
+    .tab-group {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+.nav-tabs {
+    border: none;
+    li {
+        margin-right: 10px;
+        a {
+            background: $paleteColor4;
+            font-weight: 600;
+            color: $paleteColor2;            
+            &:hover {
+                background: $paleteColor5;
+            }
+        }
+    }
+    li.active {
+        a, a:focus {
+            background: $paleteColor11;
+            border: 1px solid $paleteColor11;   
+        }
+    }
+}
+
+.tab-content {
+    padding: 30px;
+    background: $paleteColor11;
+    @include border-bottom_gray();
+    .active {
+        display: flex;
+    }
+    p {
+        margin-right: 60px;
+    }
+}
+.tab-content_min{
+    p{
+        margin: 0;
+    }
+}   
+
+// TABS GROUP END
