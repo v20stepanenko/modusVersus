@@ -24,7 +24,6 @@ body {
 .btn_big {
     width: 200px;
     height: 50px;
-    height: 1;
     border-bottom: 3px solid $paleteColor4;
     &:hover {
         border-bottom: 3px solid $paleteColor6;
@@ -281,6 +280,7 @@ header {
         margin-bottom: 44px;
         border-radius: 5px;
         display: inline-block;
+        margin-right: 15px;
         @include border-bottom_gray();
     }
 }
@@ -434,8 +434,12 @@ header {
 // TABS GROUP
 .page-features {
     .tab-group {
-        margin-top: 50px;
         margin-bottom: 40px;
+        .nav-tabs{
+            display: flex;
+            white-space: nowrap;
+            margin-top: 50px;            
+        }
     }
 }
 
@@ -465,6 +469,10 @@ header {
     padding: 30px;
     background: $paleteColor11;
     @include border-bottom_gray();
+    img{
+        width: 160px;
+        height: 150px;
+    }
     .active {
         display: flex;
     }
@@ -491,6 +499,9 @@ header {
     overflow: hidden;
     &:hover .hide-block {
         opacity: 1;
+    }
+    img{
+        width: 100%;
     }
     .hide-block {
         position: absolute;
@@ -582,7 +593,7 @@ header {
     .btn {
         font-size: 20px;
         text-transform: uppercase;
-        margin-top: 24px;
+        margin: 24px auto 0;
     }
 }
 
@@ -700,8 +711,9 @@ footer{
     }
 }
 
-.the-blog_block{
+.blog_block{
     margin-bottom: 45px;
+    display: inline-block;
     h3{
         color: $paleteColor2;
         opacity: 1;
@@ -749,3 +761,5 @@ footer{
         }
     }
 }
+
+// FOOTER END
